@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Ubuntu Hope Foundation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">U</span>
+            <span>
+                <strong>Ubuntu Hope</strong>
+                <small>FOUNDATION</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html" class="active nav-donate">Donate</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">SUPPORT OUR MISSION</span>
+        <h1>Make a Donation</h1>
+        <p>Your generosity can provide hope, dignity and opportunity.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container donation-grid">
+
+        <div>
+            <span class="section-label">YOUR SUPPORT MATTERS</span>
+            <h2>Every Contribution Makes a Difference</h2>
+
+            <p>
+                Donations help Ubuntu Hope Foundation provide food, educational
+                resources, clothing, essential items and community support to
+                people who need it most.
+            </p>
+
+            <p>
+                Whether you make a once-off contribution or become a regular
+                supporter, your generosity helps us continue our work.
+            </p>
+
+            <div class="donation-uses">
+
+                <div>
+                    <span>🍲</span>
+                    <strong>Food Assistance</strong>
+                </div>
+
+                <div>
+                    <span>📚</span>
+                    <strong>Education</strong>
+                </div>
+
+                <div>
+                    <span>👕</span>
+                    <strong>Essential Items</strong>
+                </div>
+
+                <div>
+                    <span>🤝</span>
+                    <strong>Community Projects</strong>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="donation-box">
+
+            <h2>Choose an Amount</h2>
+            <p>Suggested donation amounts</p>
+
+            <div class="amount-grid">
+                <button onclick="selectAmount(100)">R100</button>
+                <button onclick="selectAmount(250)">R250</button>
+                <button onclick="selectAmount(500)">R500</button>
+                <button onclick="selectAmount(1000)">R1 000</button>
+            </div>
+
+            <label for="customAmount">Other Amount</label>
+            <input type="number" id="customAmount" placeholder="Enter amount in Rands">
+
+            <button class="btn btn-primary full-width" onclick="donationMessage()">
+                Donate Now
+            </button>
+
+            <p id="donationMessage" class="success-message"></p>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section light-bg">
+    <div class="container bank-details">
+
+        <div class="section-heading">
+            <span class="section-label">BANK TRANSFER</span>
+            <h2>Donate Directly</h2>
+            <p>
+                The following details can be replaced with the organisation's
+                official banking information.
+            </p>
+        </div>
+
+        <div class="bank-card">
+            <p><strong>Account Name:</strong> Ubuntu Hope Foundation</p>
+            <p><strong>Bank:</strong> Your Bank Name</p>
+            <p><strong>Account Number:</strong> 0000000000</p>
+            <p><strong>Branch Code:</strong> 000000</p>
+            <p><strong>Reference:</strong> DONATION + YOUR NAME</p>
+        </div>
+
+        <p class="notice">
+            Please replace the sample banking details above with the
+            organisation's verified banking information before publishing.
+        </p>
+
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Thank You for Supporting Ubuntu Hope</h2>
+        <p>Together, we can create stronger and healthier communities.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-icon">U</span>
+                <span>
+                    <strong>Ubuntu Hope</strong>
+                    <small>FOUNDATION</small>
+                </span>
+            </a>
+            <p>Building stronger communities through hope, support and opportunity.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>info@ubuntuhopfoundation.org.za</p>
+            <p>+27 00 000 0000</p>
+            <p>South Africa</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 Ubuntu Hope Foundation. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
